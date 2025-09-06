@@ -494,6 +494,10 @@ console.log(userBooks);
 ```
 
 ### Map Method
+# In JavaScript, the .map() method is used to create a new array by applying a function to each element of the original array.
+
+# It does not change the original array.
+# It returns a new array with the transformed values.
 
 ```javascript
 const MyNums = [1,2,3,4,5];

@@ -551,6 +551,27 @@ const div = document.createElement('div');
 div.innerHTML = "<h2>This is a dynamically added heading</h2><p>This paragraph was added using JavaScript.</p>";
 document.getElementById('body').appendChild(div);
 
+## Extra
+
+// Add new languages to the list
+    function Addlanguage(LangName){
+    const li = document.createElement('li');
+    li.innerHTML = `${LangName}`;
+    document.querySelector('ul').appendChild(li);
+  }
+
+  Addlanguage('Python');
+  Addlanguage('Ruby');
+  Addlanguage('PHP');
+
+  // remove second language from the list
+  const secondLang = document.querySelectorAll('ul li')[1];
+  secondLang.remove();
+
+  //edit
+  document.getElementById('title').innerText = 'Bachpan - Learning Website';
+  document.getElementById('body').style.backgroundColor = '#333333';
+
 ```
 
 ---

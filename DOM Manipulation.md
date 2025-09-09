@@ -545,6 +545,12 @@ $('<div>') → document.createElement('div')
 .append() → .appendChild() or .append()
 .prepend() → .prepend()
 .remove() → .remove()
+
+// Create new element in DOM
+const div = document.createElement('div');
+div.innerHTML = "<h2>This is a dynamically added heading</h2><p>This paragraph was added using JavaScript.</p>";
+document.getElementById('body').appendChild(div);
+
 ```
 
 ---

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
+</head>
+<body>
+  <button id="btn">Click Me</button>
+
+  <script>
+    class Person {
+      constructor(name, age) {
+        this.library = "ReactJS";
+        this.server = "http://localhost:3000";
+
+        // Attach event listener here
+        document
+          .getElementById('btn')
+          .addEventListener('click', this.handleClick.bind(this));
+      }
+
+      // method must be defined correctly
+      handleClick() {
+        console.log(this.library);
+        console.log(this.server);
+      }
+    }
+
+    // create instance to trigger constructor
+    const p1 = new Person("Rajan", 24);
+  </script>
+</body>
+</html>
